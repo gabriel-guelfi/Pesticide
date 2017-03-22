@@ -30,7 +30,7 @@ It is a come-in-handy open source tool for debugging purposes. When you call, it
 
 
 
-### How do I get set up? ###
+### How do I Get Started? ###
 
 Simply put "insecticide" folder in any directory within your project, include Insecticide class, then instantiate its object, passing the URL, in which you placed the folder, to the constructor method. You can also pass the name of your theme, in the second constructor's argument:
 ```
@@ -115,6 +115,49 @@ try{
 The script above will shows a page with complete info about your execution and error, with a complete backtrace history and other info like current session, request and at what moment did the script stopped.
 
 Hope it to be useful to you as it is to me! =)
+
+
+
+## Customization ##
+
+### Creating Pesticide themes: ###
+
+Create a CSS file, similar to this shown below, inside "pesticide/style/themes/" directory:
+```
+#!css
+#debug-contents{
+    color:#333;
+    background-color: #f0f0f0;
+}
+.ins-dump{
+    border: 0.25px solid #777;
+    border-radius:5px;
+    background-color:#F5F1C8;
+}
+.ins-dump:hover{
+    background-color:#f0f0f0;
+}
+.ins-obs{
+    color:#990000;
+}
+.blank-screen{
+    border: 1px black solid;
+    background-color:white;
+    padding:5px;
+}
+```
+This one above is the built-in default theme. Change the style rules in it, like borders and colors, as you like. Then save it with any name. 
+
+Now you ready to go: just indicate the name you saved this CSS file you created, in the Pesticide's constructor method, as mentioned up there, on "Get Started" section of this documentation:
+```
+#!php
+<?php
+include '/path/to/pesticide/class.pesticide.php';
+
+$pesticide = new Pesticide("/path/to","custom-theme-name"); // CSS file's name, in this case would be "cutom-theme-name.css"
+?>
+```
+Done!
 
 
 
