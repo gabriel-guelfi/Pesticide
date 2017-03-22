@@ -2,6 +2,8 @@
 
 It is a come-in-handy open source tool for debugging purposes. When you call, it reunite all the request and execution info, shows it centralized in a friendly Graphic Interface screen, then stops the script till that very moment.
 
+Pesticide - PHP Debugger Tool is an Open Source, Free software. And is under the terms and conditions of GNU/GPL license. You not only have permission to distribute it, but is also encouraged to. But read the license, before. A copy of the GNU/GPL license is attached with the source code, within the root folder.
+
 **Features:**
 
 - An info header, filled with data of the current request URI, date and time and moment of execution;
