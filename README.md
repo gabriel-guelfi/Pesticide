@@ -1,4 +1,4 @@
-# Insecticide v1.0 Stable #
+# Pesticide v1.0 Stable #
 
 It is a come-in-handy open source tool for debugging purposes. When you call, it reunite all the request and execution info, shows it centralized in a friendly Graphic Interface screen, then stops the script till that very moment.
 
@@ -32,22 +32,22 @@ It is a come-in-handy open source tool for debugging purposes. When you call, it
 
 ### How do I Get Started? ###
 
-Simply put "insecticide" folder in any directory within your project, include Insecticide class, then instantiate its object, passing the URL, in which you placed the folder, to the constructor method. You can also pass the name of your theme, in the second constructor's argument:
+Simply put "pesticide" folder in any directory within your project, include Pesecticide class, then instantiate its object, passing the URL, in which you placed the folder, to the constructor method. You can also pass the name of your theme, in the second constructor's argument:
 ```
 #!php
 <?php
-include '/path/to/insecticide/class.insecticide.php';
+include '/path/to/pesticide/class.pesticide.php';
 
-$ins = new Insecticide("/path/to"); // for default theme.
+$pesticide = new Pesticide("/path/to"); // for default theme.
 ?>
 ```
 Or, for custom theme:
 ```
 #!php
 <?php
-include '/path/to/insecticide/class.insecticide.php';
+include '/path/to/pesticide/class.pesticide.php';
 
-$ins = new Insecticide("/path/to","custom");
+$pesticide = new Pesticide("/path/to","custom");
 ?>
 ```
 No further configs needed.
@@ -60,7 +60,7 @@ Simply call the method "dump()", passing the variable and the name you want it t
 ```
 #!php
 <?php
-$ins->dump($_SESSION, "My Session");
+$pesticide->dump($_SESSION, "My Session");
 ?>
 ```
 It will create a drop-down nav, with the data dumped.
@@ -72,8 +72,8 @@ Example:
 
 session_start();
 
-include $_SERVER["DOCUMENT_ROOT"]."/my-site/insecticide/class.insecticide.php";
-$ins = new Insecticide("/my-site");
+include $_SERVER["DOCUMENT_ROOT"]."/my-site/pesticide/class.pesticide.php";
+$pesticide = new Pesticide("/my-site");
 
 $_SESSION["example"] = array();
 
@@ -81,7 +81,7 @@ for($i = 0; $i < 5; $i++){
 	$_SESSION["example"][] = $i + 1;
 }
 
-$ins->dump($_SESSION, "My Session");
+$pesticide->dump($_SESSION, "My Session");
 ?>
 ```
 The script above will print something like:
@@ -96,7 +96,7 @@ Simply call method "debug()". You can pass a custom message and/or some data you
 ```
 #!php
 <?php
-$ins->debug(array("message1"), array("data"=>"printable data 1");
+$pesticide->debug(array("message1"), array("data"=>"printable data 1");
 ?>
 ```
 Example:
@@ -108,7 +108,7 @@ Example:
 try{
     $cnn = new PDO('mysql:host=' . $dbcredentials->host . ';dbname=' . $dbcredentials->name, $dbcredentials->user, $dbcredentials->pass);
 } catch(PDOException $dbex){
-    $ins->debug(array($dbex->getMessage()), array($dbcredentials));
+    $pesticide->debug(array($dbex->getMessage()), array($dbcredentials));
 }
 ?>
 ```
@@ -129,15 +129,15 @@ Create a CSS file, similar to this shown below, inside "pesticide/style/themes/"
     color:#333;
     background-color: #f0f0f0;
 }
-.ins-dump{
+.pesticide-dump{
     border: 0.25px solid #777;
     border-radius:5px;
     background-color:#F5F1C8;
 }
-.ins-dump:hover{
+.pesticide-dump:hover{
     background-color:#f0f0f0;
 }
-.ins-obs{
+.pesticide-obs{
     color:#990000;
 }
 .blank-screen{
