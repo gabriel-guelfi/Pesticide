@@ -20,6 +20,16 @@ It is a come-in-handy open source tool for debugging purposes. When you call, it
 
 
 
+**Next versions steps:**
+
+- Instantiated classes depuration;
+
+- Exceptions throwing history;
+
+- Print specific debug data separately;
+
+
+
 ### How do I get set up? ###
 
 Simply put "insecticide" folder in any directory within your project, include Insecticide class, then instantiate its object, passing the URL, in which you placed the folder, to the constructor method. You can also pass the name of your theme, in the second constructor's argument:
