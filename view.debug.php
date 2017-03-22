@@ -1,10 +1,10 @@
 <div id="debug-contents">
-    <h2 style="text-align: center;">Insecticide v1.0 - Debugger Tool - PHP Edition</h2>
+    <h2 style="text-align: center;">Pesticide v1.0 - Debugger Tool - PHP Edition</h2>
     <!--Header with general debug data-->
     <b>URI: </b><?php echo $_SERVER['REQUEST_URI']; ?>
     <br>
     <br>
-    <b>Debug called from: </b><?php echo $backtrace[1]['class']; ?><?php echo $backtrace[1]['type']; ?><?php echo $backtrace[1]['function']; ?>()
+    <b>Debug called from: </b><?php echo isset($backtrace[1]['class']) ? $backtrace[1]['class'] : ""; ?><?php echo isset($backtrace[1]['type']) ? $backtrace[1]['type'] : ""; ?><?php echo $backtrace[1]['function']; ?>()
     in 
     "<?php echo $backtrace[0]['file']; ?>", line <?php echo $backtrace[0]['line']; ?>.
     <br>
@@ -13,7 +13,7 @@
     <br>
     <br>
     <hr>
-    <h5>ARGUMENTS PASSED ON CALLER FUNCTION "<?php echo $backtrace[1]['class']; ?><?php echo $backtrace[1]['type']; ?><?php echo $backtrace[1]['function']; ?>()": </h5>
+    <h5>ARGUMENTS PASSED ON CALLER FUNCTION "<?php echo isset($backtrace[1]['class']) ? $backtrace[1]['class'] : ""; ?><?php echo isset($backtrace[1]['type']) ? $backtrace[1]['type'] : ""; ?><?php echo $backtrace[1]['function']; ?>()": </h5>
     <?php
     if (!empty($backtrace[1]['args'][0])):
         ?>

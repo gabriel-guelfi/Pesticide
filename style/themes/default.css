@@ -2,15 +2,15 @@
     color:#333;
     background-color: #f0f0f0;
 }
-.ins-dump{
+.pesticide-dump{
     border: 0.25px solid #777;
     border-radius:5px;
     background-color:#F5F1C8;
 }
-.ins-dump:hover{
+.pesticide-dump:hover{
     background-color:#f0f0f0;
 }
-.ins-obs{
+.pesticide-obs{
     color:#990000;
 }
 .blank-screen{

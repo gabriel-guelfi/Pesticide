@@ -1,13 +1,13 @@
 <?php
 
-class Insecticide {
+class Pesticide {
 
     private $uri_path;
     private $theme;
 
     public function __construct($uri_path, $theme = 'default') {
 
-        $this->uri_path = (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off" ? "https" : "http")."://".$_SERVER["SERVER_NAME"].$uri_path."/insecticide/";
+        $this->uri_path = (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off" ? "https" : "http")."://".$_SERVER["SERVER_NAME"].$uri_path."/pesticide/";
         $this->theme = $theme;
     }
 

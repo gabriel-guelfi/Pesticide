@@ -32,7 +32,7 @@ It is a come-in-handy open source tool for debugging purposes. When you call, it
 
 ### How do I Get Started? ###
 
-Simply put "pesticide" folder in any directory within your project, include Pesecticide class, then instantiate its object, passing the URL, in which you placed the folder, to the constructor method. You can also pass the name of your theme, in the second constructor's argument:
+Simply put "pesticide" folder in any directory within your project, include Pesticide class, then instantiate its object, passing the URL, in which you placed the folder, to the constructor method. You can also pass the name of your theme, in the second constructor's argument:
 ```
 #!php
 <?php

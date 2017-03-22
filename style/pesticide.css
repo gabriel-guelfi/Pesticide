@@ -2,21 +2,21 @@
     margin:0px;
     padding:10px;
 }
-.ins-container{
+.pesticide-container{
     font-size:12px;
 }
-.ins-container ul{
+.pesticide-container ul{
     list-style-type: none;
     padding:10px 0px 0px 20px;
 }
-.ins-dump>li{
+.pesticide-dump>li{
     cursor:pointer;
     margin-bottom: 3px;
 }
-.ins-hidden{
+.pesticide-hidden{
     display: none;
 }
-.ins-varname{
+.pesticide-varname{
     font-style: italic;
 }
 #debug-contents{
