@@ -35,8 +35,7 @@ Pesticide - PHP Debugger Tool is an Open Source, Free software. And is under the
 ### How do I Get Started? ###
 
 Simply put "pesticide" folder in any directory within your project, include Pesticide class, then instantiate its object, passing the URL, in which you placed the folder, to the constructor method. You can also pass the name of your theme, in the second constructor's argument:
-```
-#!php
+```php
 <?php
 include '/path/to/pesticide/class.pesticide.php';
 
@@ -44,8 +43,7 @@ $pesticide = new Pesticide("/path/to"); // for default theme.
 ?>
 ```
 Or, for custom theme:
-```
-#!php
+```php
 <?php
 include '/path/to/pesticide/class.pesticide.php';
 
@@ -59,16 +57,14 @@ No further configs needed.
 ### Dumping data: ###
 
 Simply call the method "dump()", passing the variable and the name you want it to be called:
-```
-#!php
+```php
 <?php
 $pesticide->dump($_SESSION, "My Session");
 ?>
 ```
 It will create a drop-down nav, with the data dumped.
 Example:
-```
-#!php
+```php
 <?php
 // Dumping session data:
 
@@ -95,15 +91,13 @@ The script above will print something like:
 ### Debugging my script: ###
 
 Simply call method "debug()". You can pass a custom message and/or some data you want printed:
-```
-#!php
+```php
 <?php
 $pesticide->debug(array("message1"), array("data"=>"printable data 1");
 ?>
 ```
 Example:
-```
-#!php
+```php
 <?php
 // Trying to connect to a database:
 
@@ -125,8 +119,7 @@ Hope it to be useful to you as it is to me! =)
 ### Creating Pesticide themes: ###
 
 Create a CSS file, similar to this shown below, inside "pesticide/style/themes/" directory:
-```
-#!css
+```css
 #debug-contents{
     color:#333;
     background-color: #f0f0f0;
@@ -151,8 +144,7 @@ Create a CSS file, similar to this shown below, inside "pesticide/style/themes/"
 This one above is the built-in default theme. Change the style rules in it, like borders and colors, as you like. Then save it with any name. 
 
 Now you ready to go: just indicate the name you saved this CSS file you created, in the Pesticide's constructor method, as mentioned up there, on "Get Started" section of this documentation:
-```
-#!php
+```php
 <?php
 include '/path/to/pesticide/class.pesticide.php';
 
