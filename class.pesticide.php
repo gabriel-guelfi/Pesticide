@@ -42,8 +42,10 @@ class Pesticide {
     private $theme;
 
     public function __construct($uri_path, $theme = 'default') {
+        
+        $dir = end(explode("/",__DIR__));
 
-        $this->uri_path = (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off" ? "https" : "http")."://".$_SERVER["SERVER_NAME"].$uri_path."/pesticide/";
+        $this->uri_path = (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off" ? "https" : "http")."://".$_SERVER["SERVER_NAME"].$uri_path."/".$dir."/";
         $this->theme = $theme;
     }
 
