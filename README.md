@@ -24,6 +24,8 @@ Pesticide - PHP Debugger Tool is an Open Source, Free software. And is under the
 
 **Next versions steps:**
 
+- Listen sections of the code, to register methods/functions called between "tracking()"" and "endtracking()";
+
 - Instantiated classes depuration;
 
 - Exceptions throwing history;
