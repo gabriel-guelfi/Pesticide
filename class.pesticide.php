@@ -49,7 +49,7 @@ class Pesticide {
         $this->theme = $theme;
     }
 
-    public function debug($messages = array(), $print_data = array()) {
+    public function debug($messages = array(), $print_data = array(), $pageTitle = "Pesticide - PHP Debugger Tool") {
         
         $request = $_REQUEST;
         $backtrace = debug_backtrace();

@@ -38,7 +38,7 @@
 ?>
 
 <div id="debug-contents">
-    <h2 style="text-align: center;">Pesticide v1.0 - Debugger Tool - PHP Edition</h2>
+    <h2 style="text-align: center;"><?php echo $pageTitle; ?></h2>
     <!--Header with general debug data-->
     <b>URI: </b><?php echo $_SERVER['REQUEST_URI']; ?>
     <br>
@@ -160,4 +160,6 @@
         ?>
         <p class="history-item">Then, the script stopped running.</p>
     </div>
+
+    <div id="pesticide-footer">Powered By: Pesticide PHP Debugger Tool</div>
 </div>

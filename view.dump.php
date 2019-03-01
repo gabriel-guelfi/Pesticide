@@ -71,5 +71,6 @@
                 </ul>
             </li>
         <?php endif; ?>
+        <span id="pesticide-footer">Powered By: Pesticide PHP Debugger Tool</span>
     </ul>
 </div>
